@@ -1,0 +1,115 @@
+.imag{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    
+}
+.ensah{
+    width: 50%;
+    height:auto;
+    filter: grayscale(30%) contrast(150%) brightness(90%);
+}
+.container{
+    display: flex;
+  align-items:start;
+}
+.eservice{
+    position: absolute;
+    top: 200px;
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    opacity: 0.65;
+}
+h2{
+    width: 50%;
+    flex: 1; 
+  padding: 0 200px;
+  
+    
+}
+input[type=text]{
+    width: 400px;
+    height: 40px;
+    margin-left: 90px;
+    border-radius: 30px; /* Vous pouvez ajuster la valeur pour définir le rayon de l'arrondi */
+    padding: 5px; /* Pour ajouter un peu d'espace autour du texte dans les champs de saisie */
+    border: 1px solid rgb(173, 174, 175);
+    transition: box-shadow 0.3s,border-color 0.3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+input[type=text]:focus{
+    box-shadow: 0 0 20px rgb(58, 117, 161);
+    outline: none;
+    
+}
+input[type=password]{
+    width: 400px;
+    height: 40px;
+    margin-left: 90px;
+    border-radius: 30px; /* Vous pouvez ajuster la valeur pour définir le rayon de l'arrondi */
+    padding: 5px; /* Pour ajouter un peu d'espace autour du texte dans les champs de saisie */
+    border: 1px solid rgb(173, 174, 175);
+    transition: box-shadow 0.3s,border-color 0.3s;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+input[type=password]:focus{
+    box-shadow: 0 0 20px rgb(58, 117, 161);
+    outline: none;
+    
+}
+input[type=radio]{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    
+}
+label{
+    color: rgb(126, 126, 126);
+}
+input[type=submit]{
+    background-color: rgb(50, 50, 213);
+    color: white;
+    width: 430px;
+    height: 50px;
+    margin-left: 90px;
+    border-radius: 30px;
+
+}
+a{
+    color: rgb(82, 110, 181);
+    margin-left: 35%;
+    margin-top: 15px;
+    
+    text-decoration: none;
+}
+.avecMarge{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.errorMessage {
+    color: red; /* Couleur rouge */
+    margin-top:3px ;
+    margin-left:15% ;
+  }
+  
+  input[type="text"]:invalid + input[type="password"]:invalid + .errorMessage {
+    display: block; /* Afficher le message d'erreur si les champs sont invalides */
+  }
+  
+p{
+    margin-left: 25%;
+    margin-top: 20%;
+    color:rgb(126, 126, 126);
+    
+}
+@media screen and (max-width: 768px) {
+    .container {
+        display: block; /* Afficher le contenu lorsque la largeur de l'écran est inférieure à 768px */
+    }
+    .imag {
+        display: none; /* Masquer la première partie */
+    }
+}
